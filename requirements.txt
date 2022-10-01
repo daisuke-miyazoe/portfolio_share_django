@@ -1,2 +1,6 @@
 django
 mysqlclient
+pillow
+djangorestframework
+django-cors-headers
+django-cleanup
