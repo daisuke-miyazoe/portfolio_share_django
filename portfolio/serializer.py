@@ -17,7 +17,8 @@ class SimplePostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        exclude = ('text', 'created_at')
+        # exclude = ('text', 'created_at')
+        fields = '__all__'
 
 class PostSerializer(serializers.ModelSerializer):
     category = CategorySerializer(read_only=True)
